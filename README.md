@@ -12,5 +12,10 @@ $ mecab -Owakati -d /usr/local/Cellar/mecab/0.996/lib/mecab/dic/mecab-ipadic-neo
 $ ./word2vec -train jawikisep.txt -output jawikisep.bin -size 200 -threads 4 -binary 1 -window 5 -sample 1e-3 
 ```
 
-##共起関係を求める
+##共起関係を出力する
 
+##Licence
+"THE BEER-WARE LICENSE"
+
+If we meet some day, and you think
+this stuff is worth it, you can buy me a beer in return.
