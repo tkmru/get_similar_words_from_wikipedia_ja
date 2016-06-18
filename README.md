@@ -13,6 +13,12 @@ $ ./word2vec -train jawikisep.txt -output jawikisep.bin -size 200 -threads 4 -bi
 ```
 
 ##共起関係を出力する
+どの単語との共起関係を求めるか考えたところ、出現回数が多い単語の共起関係を求めたほうが正確になるとの考えに至った。
+以下のコマンドで名詞をwikipediaのテキストから出現回数順に出力した。
+
+```
+$ cat jawiki.txt | mecab -d /usr/local/Cellar/mecab/0.996/lib/mecab/dic/mecab-ipadic-neologd -b 81920| grep $"\t名詞"| cut -f1 | sort | uniq -c | sort -nr > jawiki_meishi.txt
+```
 
 ##Licence
 "THE BEER-WARE LICENSE"
