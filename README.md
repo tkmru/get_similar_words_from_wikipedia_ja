@@ -1,5 +1,5 @@
-#distance wikipedia
-Word2vecを用いて日本語版 wikipediaのデータを学習させ、単語の共起関係を求めた。
+#get similar words from wikipedia ja
+Word2vecを用いて日本語版 wikipediaのデータを学習させ、単語の共起関係を求め、単語をカテゴリ分けした。
 
 ##ファイル
 ### get_similar_words.py
