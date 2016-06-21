@@ -1,5 +1,5 @@
 #get similar words from wikipedia ja
-Word2vecを用いて日本語版 wikipediaのデータを学習させ、単語の共起関係を求め、単語をカテゴリ分けした。
+Word2Vecを用いて日本語版 wikipediaのデータを学習させ、単語の共起関係を求め、単語をカテゴリ分けした。
 
 ##ファイル
 ### get_similar_words.py
@@ -22,7 +22,7 @@ get_similar_words.pyが出力した、100610個のカテゴリ分けされた単
 $ wp2txt -i jawiki-latest-pages-articles.xml.bz2
 $ cat jawiki-latest-pages-articles.xml-* > jawiki.txt
 $ mecab -Owakati -d /usr/local/Cellar/mecab/0.996/lib/mecab/dic/mecab-ipadic-neologd -b 81920 jawiki.txt > jawikisep.txt
-$ ./word2vec -train jawikisep.txt -output jawikisep.bin -size 200 -threads 4 -binary 1 -window 5 -sample 1e-3 
+$ word2vec -train jawikisep.txt -output jawikisep.bin -size 200 -threads 4 -binary 1 -window 5 -sample 1e-3 
 ```
 
 ##単語をカテゴリに分類する
